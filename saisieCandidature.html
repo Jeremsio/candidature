@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature:</legend>
+
+			<form action="recapitulation.php" method="GET" name="authentification" >
+				
+				<label> Civilité :</label>
+				<select name="civilite">
+						<option>Monsieur</option>
+						<option>Madame</option>
+						<option>Mademoiselle</option>
+				</select>
+				<br/>
+				<br/>
+				<label>Prenom :</label>
+				<input type="text" name="prenom" placeholder="Saisir votre nom" />
+				<br/>	
+				
+				<br/>
+				<label>Nom :</label>
+				<input type="text" required name="nom" placeholder="Saisir votre nom" />	
+				
+				<br/>	
+				<br/>
+				<label>Date de naissance :</label>	
+				<input type="date" required name="date" placeholder="Saisir votre date de naissance" />
+				<br/>
+				<br/>
+				<label>Numéro de téléphone :</label>	
+				<input type="tel" required name="telephone" placeholder="Saisir votre numero de telephone" />
+				<br/>
+				<br/>
+				<label>Adresse électronique :</label>	
+				<input type="email"  name="email" placeholder="Saisir votre adresse email" />
+				<br/>
+				<br/>
+				<label> Niveau en PHP :</label>
+				<br/>
+				<br/>
+				<input type="radio" name="niveau" value="deb" />Debutant
+				<input type="radio" name="niveau" value="moy" />Moyen
+				<input type="radio" name="niveau" value="bon" />Bon
+				<input type="radio" name="niveau" value="ex" />Exellent
+				<br/>
+				<br/>
+				<label> Framworks PHP :</label>
+				<br/>
+				<br/>
+				<input type="checkbox" name="framworks[]" value="1" >Symfony
+				<input type="checkbox" name="framworks[]" value="2" >CodeIgniter
+				<input type="checkbox" name="framworks[]" value="3" >FuelPHP
+				<input type="checkbox" name="framworks[]" value="4" > CakePHP
+				<input type="checkbox" name="framworks[]" value="5" >Laravel
+				<br/>
+				<br/>
+				<label>Moi :</label>
+				<br/>
+				<textarea name="moi" rows="7" cols="60" ></textarea>
+				<br/>
+				<br/>
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Annuler" />
+			</form>
+
+
+		</fieldset>
+		
+	</body> 
+	
+</html>
+
+
+
